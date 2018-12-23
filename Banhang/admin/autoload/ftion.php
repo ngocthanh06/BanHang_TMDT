@@ -104,7 +104,10 @@
         return $url  = "http://localhost/banhang/"; 
     }
 
-
+    function admin_trans($url)
+    {
+        return base_url() . "admin/" .$url;
+    }
     function public_admin()
     {
         return base_url() . "public/admin/";
@@ -146,6 +149,13 @@
         }
     }
 
+    if ( ! function_exists('redirectTrans'))
+    {
+        function  redirectTrans($url = "")
+        {
+            header("location: ".base_url()."admin/{$url}");exit();
+        }
+    }
 
 
     /**
@@ -159,12 +169,29 @@
         }
     }
 
-    function formatPrice($number=90000000)
+    function formatprice($number)
     {
         $number = intval($number);
-        $number = number_format($number,0,'.',',');
+       return $number = number_format($number,0,'.',',')." đ";
     
     }
+    //tính số tiền sale
+    function saleprice($number,$sale)
+    {
+        $number = intval($number);
+        $sale=intval($sale);
 
+        $price = ($number*(100-$sale)/100)." đ";
+        return formatprice($price) ;
+    }
+
+    function thue($number)
+    {
+        $number = intval($number);
+
+        $thue = $number * 110/100;
+        return formatprice($thue);
+    }
+    
 
  ?>

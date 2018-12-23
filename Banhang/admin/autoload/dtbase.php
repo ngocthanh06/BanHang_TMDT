@@ -139,7 +139,7 @@
             }
             return $data;
         } 
-        //lấy toàn bộ id có trong bảng
+        //lấy toàn bộ dữ liệu của id có trong bảng
         public function fetchID($table , $id )
         {
             $sql = "SELECT * FROM {$table} WHERE id = $id ";

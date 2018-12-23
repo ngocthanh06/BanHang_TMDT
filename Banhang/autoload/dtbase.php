@@ -271,6 +271,11 @@
             $tien = mysqli_fetch_assoc($result);
             return $tien;
         }
+        public function conn($sql)
+        {
+            $result = mysqli_query($this->link  , $sql);
+            return $result;    
+        }
     }
     
    

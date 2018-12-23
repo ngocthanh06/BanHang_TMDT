@@ -163,19 +163,20 @@
     function formatprice($number)
     {
         $number = intval($number);
-       return $number = number_format($number,0,'.',',');
+       return $number = number_format($number,0,'.',',')." đ";
     
     }
-
+    //tính số tiền sale
     function saleprice($number,$sale)
     {
         $number = intval($number);
         $sale=intval($sale);
 
-        $price = $number*(100-$sale)/100;
+        $price = ($number*(100-$sale)/100)." đ";
         return formatprice($price) ;
     }
 
+    
     
 
  ?>

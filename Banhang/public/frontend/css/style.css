@@ -107,7 +107,7 @@ h1,h2,h3,h4,h5,h6
 
 #header-main
 {
-    padding: 25px 0px;
+    padding: 25px 0px 40px;
 }
 #header-main .form-control,button
 {
@@ -180,8 +180,9 @@ h1,h2,h3,h4,h5,h6
 /* ====================MENUNAV================== */
 #menunav
 {
-    background: #444;
+    background: #5c8d89;
     min-height: 40px;
+
 }
 #menu-main > li 
 {
@@ -261,7 +262,7 @@ h1,h2,h3,h4,h5,h6
 }
 .box-title
 {
-    background:#ea3a3c;
+    background:#5c8d89;
     color: white;
     font-weight: bold;
     font-size: 14px;
@@ -271,7 +272,7 @@ h1,h2,h3,h4,h5,h6
 {
     color: white;
     font-size: 20px;
-    background: #da1719;;
+    background: #5c8d89;;
     padding: 12px;
 }
 /* menud a cap */
@@ -367,17 +368,17 @@ h1,h2,h3,h4,h5,h6
 .title-main
 {
     border-bottom: 2px solid #e3e3e3;
-    padding: 10px 5px 4px 0px;
+    padding: 10px 5px 15px 0px;
 }
 
 .title-main a
 {
     font-weight: bold;
-    padding: 7px 47px 5px 30px;
+    padding: 7px 40px 5px 40px;
     font-size: 18px;
     border-bottom: 2px solid #e3e3e3;
     text-transform: uppercase;
-    background: #337ab7;
+    background: #5c8d89;
     color: #fff;
     border-radius: 5px;
 
@@ -416,8 +417,9 @@ h1,h2,h3,h4,h5,h6
 
 .item-product 
 {
+    margin-top: 20px;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 
@@ -461,7 +463,7 @@ h1,h2,h3,h4,h5,h6
 
 #footer
 {
-    background: #444;
+    background: #F5F5F5 ;
     padding: 10px;
     color: white;
     margin-top: 20px;
@@ -605,17 +607,23 @@ h1,h2,h3,h4,h5,h6
 #ft-about
 {
     padding: 15px;
+
 }
 
 #ft-about p
 {
-    padding-top: 20px;
-    padding-bottom:20px;
+    padding-top: 5px;
+    padding-bottom:5px;
     line-height: 22px;
-    color: #444;
+    color: #acacac;
     font-size: 13px;
     font-weight: 500;
 }
+#ft-about p b
+{
+    color: #fff;
+}
+
 
 
 .tittle-footer
@@ -676,6 +684,45 @@ h1,h2,h3,h4,h5,h6
 #ft-bottom
 {
     padding: 5px;
-    background: #DDDDDD;
-    color: #444;
+    background: #161829;
+    color: #f1ecec;
 }
+.navbar-default{
+    margin-bottom: 0px;
+    min-height: 30px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    
+
+}
+.navbar-default .navbar-nav>li>a{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover
+{
+    color: #9FB6CD;
+}
+.navbar-inverse
+{
+    border:none;
+    margin-bottom: 0;
+}
+.navbar-inverse .navbar-nav>li>a
+{
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:hover
+{
+    color: #2F4F4F;
+}
+.navbar-inverse .navbar-nav>li:hover
+{
+    background: #EEE8AA;
+}
+
+
+

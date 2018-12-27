@@ -1,120 +1,92 @@
+<!--Hỗ trợ khách hàng-->
+<!--Start of Tawk.to Script-->
+
 </div>
-<section id="footer">
-                    <div class="container">
-                        <div class="col-md-3" id="shareicon">
-                            <ul>
-                                <li>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fa fa-youtube"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-8" id="title-block">
-                            <div class="pull-left">
-                                
-                            </div>
-                            <div class="pull-right">
-                                
-                            </div>
-                        </div>
-                       
-                    </div>
-                </section>
-                <section id="footer-button">
-                    <div class="container-pluid">
-                        <div class="container">
-                            <div class="col-md-3" id="ft-about">
-                                
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco </p>
-                            </div>
-                            <div class="col-md-3 box-footer" >
-                                <h3 class="tittle-footer">my accout</h3>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i> Giới thiệu</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i> Liên hệ </a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i>  Contact </a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i> My Account</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i> Giới thiệu</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 box-footer">
-                                <h3 class="tittle-footer">my accout</h3>
-                               <ul>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i> Giới thiệu</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i> Liên hệ </a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i>  Contact </a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i> My Account</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i> Giới thiệu</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3" id="footer-support">
-                                <h3 class="tittle-footer"> Liên hệ</h3>
-                                <ul>
-                                    <li>
-                                        
-                                        <p><i class="fa fa-home" style="font-size: 16px;padding-right: 5px;"></i> Ngách 56/34 số nhà 22 phường đức thắng </p>
-                                        <p><i class="sp-ic fa fa-mobile" style="font-size: 22px;padding-right: 5px;"></i> 012345678</p>
-                                        <p><i class="sp-ic fa fa-envelope" style="font-size: 13px;padding-right: 5px;"></i> support@gmail.com</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="ft-bottom">
-                    <p class="text-center">Copyright © 2017 . Design by  ... !!! </p>
-                </section>
-            </div>
-        </div>      
-    </div>
-            </div>      
+<section id="footer" >
+    <div class="container">
+        <div class="col-md-3" style="text-align: center;">
+            <div class="col-md-3">
+                <img src="public/frontend/images/send.png"></div>
+                <div class="col-md-9">
+                    <span>Giao hàng tận nơi</span>
+            <p><b>63 tỉnh thành</b></p>
+                </div>
+            
         </div>
-    <script  src="public/frontend/js/slick.min.js"></script>
 
-    </body>
-        
+        <div class="col-md-3" style="text-align: center;">
+            <div class="col-md-3">
+                <img src="public/frontend/images/flyer.png"></div>
+            <div class="col-md-9">
+                <span>Sản phẩm</span>
+            <p><b>Chính hãng</b></p>
+            </div>
+        </div>
+
+        <div class="col-md-3" style="text-align: center;">
+            <div class="col-md-3">
+            <img src="public/frontend/images/support.png"></div>
+            <div class="col-md-9"><span>Tư vấn miễn phí
+            <p><b>012345678</b></p></span></div>
+            
+        </div>
+
+        <div class="col-md-3" style="text-align: center;">
+            <div class="col-md-3">
+                <img src="public/frontend/images/laptop.png"></div>
+            <div class="col-md-9">
+                <span>Chính sách đổi trả</span>
+            <p><b>Linh hoạt</b></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer-button">
+    <div class="container-pluid" style="background: #474c5f">
+        <div class="container">
+            <div class="col-md-3" id="ft-about">
+                <p><span class="glyphicon glyphicon-check" style="  color: #689bda"></span> <b>Hỗ trợ Khách hàng</b></p>
+                <p>Phiếu mua hàng</p>
+                <p>Trung tâm bảo hành</p>
+                <p>Thanh toán và giao hàng</p>
+                <p>Dịch vụ sửa chữa và bảo trì</p>
+            </div>
+
+            <div class="col-md-3" id="ft-about">
+                <p><span class="glyphicon glyphicon-check"style="color: #689bda"></span> <b>Chính sách Mua hàng và Bảo hành</b></p>
+                <p>Chính sách điện máy</p>
+                <p>Chính sách đổi trả</p>
+                <p>Chính sách bảo hành</p>
+                <p>Chính sách thanh toán</p>
+                <p>Chính sách trả góp</p>
+                <p>Chính sách báo giá</p>
+            </div>
+            <div class="col-md-3" id="ft-about">
+                <p><span class="glyphicon glyphicon-map-marker  " style=" color: #689bda"></span> <b>Vị trí</b></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.647365781618!2d107.60247551423825!3d16.442726288651137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a168be480c99%3A0x325d97aa5cef2129!2zSOG7kyDEkOG6r2MgRGksIFRwLiBIdeG6vywgVGjhu6thIFRoacOqbiBIdeG6vywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1544796188567" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3" id="ft-about">
+                <p> <span class="glyphicon glyphicon-check  " style="   color: #689bda"></span> <b>Liên hệ</b></p>
+                <p>Phiếu mua hàng</p>
+                <p>Trung tâm bảo hành</p>
+                <p>Thanh toán và giao hàng</p>
+                <p>Dịch vụ sửa chữa và bảo trì</p>
+                <p><img src="public/frontend/images/payment.png"></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="ft-bottom">
+    <p class="text-center" style="color: #fff">Copyright © 2018 . Design by ngocthanh06 ... !!! </p>
+</section>
+</div>
+</div>      
+</div>
+</div>      
+</div>
+<script  src="public/frontend/js/slick.min.js"></script>
+</body>
 </html>
-
 <script type="text/javascript">
     $(function() {
         $hidenitem = $(".hidenitem");
@@ -125,4 +97,15 @@
             $hidenitem.hide(500);
         })
     })
+</script>
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c13bc607a79fc1bddf0f3de/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>

@@ -104,7 +104,10 @@
         return $url  = "http://localhost/banhang/"; 
     }
 
-
+    function admin_trans($url)
+    {
+        return base_url() . "admin/" .$url;
+    }
     function public_admin()
     {
         return base_url() . "public/admin/";
@@ -146,6 +149,13 @@
         }
     }
 
+    if ( ! function_exists('redirectTrans'))
+    {
+        function  redirectTrans($url = "")
+        {
+            header("location: ".base_url()."admin/{$url}");exit();
+        }
+    }
 
 
     /**
@@ -159,12 +169,68 @@
         }
     }
 
-    function formatPrice($number=90000000)
+    function formatprice($number)
     {
         $number = intval($number);
-        $number = number_format($number,0,'.',',');
+       return $number = number_format($number,0,'.',',')." đ";
     
     }
+    //tính số tiền sale
+    function saleprice($number,$sale)
+    {
+        $number = intval($number);
+        $sale=intval($sale);
 
+        $price = ($number*(100-$sale)/100)." đ";
+        return formatprice($price) ;
+    }
+
+    function thue($number)
+    {
+        $number = intval($number);
+
+        $thue = $number * 110/100;
+        return formatprice($thue);
+    }
+     //Hàm dưới sử dụng trong trường hợp sử dụng file đính kèm
+
+    function sendMailAttachment($title, $content, $nTo, $mTo,$diachicc='',$file,$filename){
+    $nFrom = 'Thạnh Long';
+    $mFrom = 'thanhlongtmdt@gmail.com';  //dia chi email cua ban 
+    $mPass = 'Thanh1234';       //mat khau email cua ban
+    $mail             = new PHPMailer();
+    $body             = $content;
+    $mail->IsSMTP(); 
+    $mail->CharSet   = "utf-8";
+    $mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
+    $mail->SMTPAuth   = true;                    // enable SMTP authentication
+    $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
+    $mail->Host       = "smtp.gmail.com";        
+    $mail->Port       = 465;
+    $mail->Username   = $mFrom;  // GMAIL username
+    $mail->Password   = $mPass;               // GMAIL password
+    $mail->SetFrom($mFrom, $nFrom);
+    //chuyen chuoi thanh mang
+    $ccmail = explode(',', $diachicc);
+    $ccmail = array_filter($ccmail);
+    if(!empty($ccmail)){
+        foreach ($ccmail as $k => $v) {
+            $mail->AddCC($v);
+        }
+    }
+    $mail->Subject    = $title;
+    $mail->MsgHTML($body);
+    $address = $mTo;
+    $mail->AddAddress($address, $nTo);
+    $mail->AddReplyTo('thanhlongtmdt.com', 'Thạnh Long');
+    $mail->AddAttachment($file,$filename);
+    if(!$mail->Send()) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
 
  ?>
+
+
